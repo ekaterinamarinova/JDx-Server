@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8fc6b9f8-4d5a-46c8-a2f0-78c5174b9556" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1cApsX45xbmeUHFzHelS1IpDNQT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dopezy\OneDrive\Desktop\java\j-dx" />
+      <recent name="C:\Users\Dopezy\OneDrive\Desktop\java\j-dx\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Server">
+    <configuration name="Application" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Application" />
+      <module name="j-dx.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MultiThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="connect.MultiThread" />
+      <module name="j-dx.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="connect.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Server" />
+      <module name="j-dx.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JDxServerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;connect.JDxServerTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="JDxServerTest.testStart" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;connect.JDxServerTest.testStart&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="JDxServerTest.testStart_withIncorrectPortNumber" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;connect.JDxServerTest.testStart_withIncorrectPortNumber&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.JDxServerTest.testStart" />
+        <item itemvalue="Gradle.JDxServerTest" />
+        <item itemvalue="Application.MultiThread" />
+        <item itemvalue="Application.Server" />
+        <item itemvalue="Gradle.JDxServerTest.testStart_withIncorrectPortNumber" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8fc6b9f8-4d5a-46c8-a2f0-78c5174b9556" name="Default Changelist" comment="" />
+      <created>1589981459342</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589981459342</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589983364447">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.65.1280.984@0.0.1536.824" timestamp="1589983364447" />
+    <state x="534" y="168" key="#com.intellij.ide.util.MemberChooser" timestamp="1594591546765">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="2365" y="266" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.65.1280.984@1920.65.1280.984" timestamp="1589981893711" />
+    <state x="534" y="168" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1594591546765" />
+    <state x="523" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594162994892">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="523" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824/1920.65.1280.984@0.0.1536.824" timestamp="1589983225634" />
+    <state x="2356" y="65" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824/1920.65.1280.984@1920.65.1280.984" timestamp="1590055865948" />
+    <state x="523" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1594162994892" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1590833963893">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1590833963893" />
+    <state width="1493" height="166" key="GridCell.Tab.0.bottom" timestamp="1594593397760">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1237" height="303" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.65.1280.984@1920.65.1280.984" timestamp="1589982112461" />
+    <state width="1493" height="166" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594593397760" />
+    <state width="1493" height="166" key="GridCell.Tab.0.center" timestamp="1594593397760">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1237" height="303" key="GridCell.Tab.0.center/0.0.1536.824/1920.65.1280.984@1920.65.1280.984" timestamp="1589982112461" />
+    <state width="1493" height="166" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594593397760" />
+    <state width="1493" height="166" key="GridCell.Tab.0.left" timestamp="1594593397759">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1237" height="303" key="GridCell.Tab.0.left/0.0.1536.824/1920.65.1280.984@1920.65.1280.984" timestamp="1589982112461" />
+    <state width="1493" height="166" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594593397759" />
+    <state width="1493" height="166" key="GridCell.Tab.0.right" timestamp="1594593397760">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1237" height="303" key="GridCell.Tab.0.right/0.0.1536.824/1920.65.1280.984@1920.65.1280.984" timestamp="1589982112461" />
+    <state width="1493" height="166" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594593397760" />
+    <state width="1493" height="156" key="GridCell.Tab.1.bottom" timestamp="1594590986998">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="156" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594590986998" />
+    <state width="1493" height="156" key="GridCell.Tab.1.center" timestamp="1594590986998">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="156" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1594590986998" />
+    <state width="1493" height="156" key="GridCell.Tab.1.left" timestamp="1594590986998">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="156" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1594590986998" />
+    <state width="1493" height="156" key="GridCell.Tab.1.right" timestamp="1594590986998">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="156" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1594590986998" />
+    <state x="2040" y="131" key="SettingsEditor" timestamp="1589981562706">
+      <screen x="1920" y="65" width="1280" height="984" />
+    </state>
+    <state x="2040" y="131" key="SettingsEditor/0.0.1536.824/1920.65.1280.984@1920.65.1280.984" timestamp="1589981562706" />
+    <state x="1920" y="133" width="1200" height="595" maximized="true" key="dock-window-1" timestamp="1589982286724">
+      <screen x="1920" y="65" width="1280" height="984" />
+    </state>
+    <state x="1920" y="133" width="1200" height="595" maximized="true" key="dock-window-1/0.0.1536.824/1920.65.1280.984@0.0.1536.824" timestamp="1589982286724" />
+    <state x="1920" y="113" width="1200" height="595" maximized="true" key="dock-window-2" timestamp="1589982620625">
+      <screen x="1920" y="65" width="1280" height="984" />
+    </state>
+    <state x="1920" y="113" width="1200" height="595" maximized="true" key="dock-window-2/0.0.1536.824/1920.65.1280.984@0.0.1536.824" timestamp="1589982620625" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1594157325996">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1594157325996" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk-11.0.6/lib/src.zip!/java.base/java/util/concurrent/ThreadPoolExecutor.java</url>
+          <line>886</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
