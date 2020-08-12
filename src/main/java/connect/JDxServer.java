@@ -36,6 +36,7 @@ public class JDxServer {
                 LOGGER.info("Client socket with address: " + accepted.getInetAddress() + " connected successfully.");
                 in = accepted.getInputStream();
                 read.readInputBytes(in);
+                //TODO: after bytes are read, further processing should be implemented
             } finally {
                 isConnected = false;
                 in.close();

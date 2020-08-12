@@ -1,0 +1,3 @@
+server:
+  port: 8080
+  protocol: CAN #Supported serial protocols to decode by: CAN
