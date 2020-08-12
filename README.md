@@ -1,5 +1,5 @@
 # J-Dx Server Application
-#![logo](jdx.png)
+![logo](jdx.png)
 ## Overview
 This application represents a Java server that uses TCP and Sockets to 
 instantiate the server on a configurable port.
