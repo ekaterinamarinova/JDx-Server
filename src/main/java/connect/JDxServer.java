@@ -1,5 +1,6 @@
 package connect;
 
+import decode.InputBytesDecoder;
 import read.InputBytesReader;
 
 import java.io.IOException;
@@ -13,6 +14,7 @@ public class JDxServer {
     private static final Logger LOGGER = Logger.getLogger(JDxServer.class.getName());
 
     private int port;
+    protected InputBytesDecoder decoder;
     protected InputBytesReader read;
     protected ServerSocket serverSocket;
     protected InputStream in;
@@ -22,6 +24,12 @@ public class JDxServer {
     public JDxServer(int port, InputBytesReader inputBytesReader) {
         this.port = port;
         this.read = inputBytesReader;
+    }
+
+    public JDxServer(int port, InputBytesDecoder decoder, InputBytesReader read) {
+        this.port = port;
+        this.decoder = decoder;
+        this.read = read;
     }
 
     public void start() throws IOException {
@@ -35,8 +43,7 @@ public class JDxServer {
             try (Socket accepted = serverSocket.accept()) {
                 LOGGER.info("Client socket with address: " + accepted.getInetAddress() + " connected successfully.");
                 in = accepted.getInputStream();
-                read.readInputBytes(in);
-                //TODO: after bytes are read, further processing should be implemented
+                decoder.sampleDecode(read.readInputBytes(in));
             } finally {
                 isConnected = false;
                 in.close();
