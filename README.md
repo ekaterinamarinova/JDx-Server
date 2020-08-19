@@ -12,4 +12,5 @@ packets to the J-Dx app, the server decodes them according to the protocol inter
 and stores the decoded data for further processing.
 
 ## External Dependencies  
-[Junit 4.12](https://mvnrepository.com/artifact/junit/junit/4.12)
+- [Junit 4.12](https://mvnrepository.com/artifact/junit/junit/4.12)
+- SnakeYaml 1.8
