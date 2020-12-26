@@ -11,22 +11,18 @@ public class InputBytesDecoder {
      * byte 1 -> payload height
      * byte 2+ -> payload itself
      *
-     *
-     * @param data
+     * @param data - bytes, containing state info of a mock vehicle
      */
     public void sampleDecode(byte[] data) {
-        byte payloadLength = data[0];
-        byte payloadHeight = data[1];
-
-        for (int i = 2; i < payloadLength; i++) {
-            switch (data[i]) {
-                case 10 :
+        for (byte datum : data) {
+            switch (datum) {
+                case 10:
                     System.out.println("Oxygen pressure in system OK.");
                     break;
-                case 20 :
+                case 20:
                     System.out.println("Battery voltage level fine.");
                     break;
-                case 30 :
+                case 30:
                     System.out.println("Fuel pressure in pump OK.");
                     break;
                 case -50:

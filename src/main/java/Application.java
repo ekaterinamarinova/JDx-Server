@@ -4,23 +4,24 @@ import read.InputBytesReader;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Map;
 
 public class Application {
 
     private static final int PORT = 8080;
 
+    private Object yamlPayload = load();
+
     public static void main(String[] args) throws IOException {
-//        new Application().load();
+        new Application().load();
         new JDxServer(PORT, new InputBytesReader()).start();
     }
 
-//    void load() {
-//        Yaml yaml = new Yaml();
-//        InputStream inputStream = this.getClass()
-//                .getClassLoader()
-//                .getResourceAsStream("application.yml");
-//        var obj = yaml.load(inputStream);
-//        System.out.println(obj);
-//    }
+    Object load() {
+        Yaml yaml = new Yaml();
+        InputStream inputStream = this.getClass()
+                .getClassLoader()
+                .getResourceAsStream("application.yml");
+
+        return yaml.load(inputStream);
+    }
 }

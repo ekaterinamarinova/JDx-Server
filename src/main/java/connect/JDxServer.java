@@ -13,23 +13,18 @@ public class JDxServer {
 
     private static final Logger LOGGER = Logger.getLogger(JDxServer.class.getName());
 
-    private int port;
+    protected ServerSocket serverSocket;
     protected InputBytesDecoder decoder;
     protected InputBytesReader read;
-    protected ServerSocket serverSocket;
     protected InputStream in;
+    private int port;
 
     protected JDxServer() { }
 
     public JDxServer(int port, InputBytesReader inputBytesReader) {
         this.port = port;
         this.read = inputBytesReader;
-    }
-
-    public JDxServer(int port, InputBytesDecoder decoder, InputBytesReader read) {
-        this.port = port;
-        this.decoder = decoder;
-        this.read = read;
+        this.decoder  = new InputBytesDecoder();
     }
 
     public void start() throws IOException {
