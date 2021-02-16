@@ -13,35 +13,38 @@ public class JDxServer {
 
     private static final Logger LOGGER = Logger.getLogger(JDxServer.class.getName());
 
-    protected ServerSocket serverSocket;
-    protected InputBytesDecoder decoder;
-    protected InputBytesReader read;
-    protected InputStream in;
-    private int port;
+    private final InputBytesDecoder decoder;
+    private final InputBytesReader reader;
+    private final int port;
 
-    protected JDxServer() { }
+    private InputStream in;
 
     public JDxServer(int port, InputBytesReader inputBytesReader) {
         this.port = port;
-        this.read = inputBytesReader;
+        this.reader = inputBytesReader;
         this.decoder  = new InputBytesDecoder();
     }
 
     public void start() throws IOException {
         LOGGER.info("Trying to start ServerSocket on port " + port + "...");
-        serverSocket = new ServerSocket(port);
+
+        ServerSocket serverSocket = new ServerSocket(port);
         boolean isConnected = true;
+
         LOGGER.info("ServerSocket connected to port " + port + ".");
 
         while (isConnected) {
-            LOGGER.info("Started listening for a connection to be made to the ServerSocket...");
+            LOGGER.info("Started listening for a connection...");
+
             try (Socket accepted = serverSocket.accept()) {
                 LOGGER.info("Client socket with address: " + accepted.getInetAddress() + " connected successfully.");
+
                 in = accepted.getInputStream();
-                decoder.sampleDecode(read.readInputBytes(in));
+                decoder.sampleDecode(reader.readInputBytes(in));
             } finally {
                 isConnected = false;
                 in.close();
+
                 LOGGER.info("Input stream and client socket closed.");
             }
         }

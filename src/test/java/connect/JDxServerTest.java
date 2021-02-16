@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 
 
 @RunWith(JUnit4.class)
-public class JDxServerTest extends JDxServer {
+public class JDxServerTest {
 
     private static final Integer INVALID_PORT = 1234567890;
     private static final Integer VALID_PORT = 8080;
@@ -35,8 +35,9 @@ public class JDxServerTest extends JDxServer {
     public void testStart() {
         BlockingQueue<Runnable> blockingQueue = new ArrayBlockingQueue<>(2);
 
-        ThreadPoolExecutor executor = new ThreadPoolExecutor(2, 2,
-                20L, TimeUnit.SECONDS, blockingQueue);
+        ThreadPoolExecutor executor = new ThreadPoolExecutor(
+                2, 2, 20L, TimeUnit.SECONDS, blockingQueue
+        );
 
         executor.execute(() -> {
             try {
@@ -64,6 +65,5 @@ public class JDxServerTest extends JDxServer {
         jDxServer = new JDxServer(INVALID_PORT, reader);
         jDxServer.start();
     }
-
-
+    
 }
