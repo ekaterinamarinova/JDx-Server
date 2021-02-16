@@ -5,7 +5,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
-import read.InputBytesReader;
 
 import java.io.IOException;
 import java.net.Socket;
@@ -22,13 +21,11 @@ public class JDxServerTest {
     private static final Integer VALID_PORT = 8080;
     private static final String HOST_IP = "127.0.0.1";
 
-    private InputBytesReader reader;
     private JDxServer jDxServer;
 
     @Before
     public void setUp() {
-        reader = new InputBytesReader();
-        jDxServer = new JDxServer(VALID_PORT, reader);
+        jDxServer = new JDxServer(VALID_PORT);
     }
 
     @Test
@@ -62,8 +59,8 @@ public class JDxServerTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void testStart_withIncorrectPortNumber() throws IOException {
-        jDxServer = new JDxServer(INVALID_PORT, reader);
+        jDxServer = new JDxServer(INVALID_PORT);
         jDxServer.start();
     }
-    
+
 }

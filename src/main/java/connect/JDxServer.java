@@ -1,7 +1,6 @@
 package connect;
 
 import decode.InputBytesDecoder;
-import read.InputBytesReader;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -14,14 +13,12 @@ public class JDxServer {
     private static final Logger LOGGER = Logger.getLogger(JDxServer.class.getName());
 
     private final InputBytesDecoder decoder;
-    private final InputBytesReader reader;
     private final int port;
 
     private InputStream in;
 
-    public JDxServer(int port, InputBytesReader inputBytesReader) {
+    public JDxServer(int port) {
         this.port = port;
-        this.reader = inputBytesReader;
         this.decoder  = new InputBytesDecoder();
     }
 
@@ -34,15 +31,15 @@ public class JDxServer {
         LOGGER.info("ServerSocket connected to port " + port + ".");
 
         while (isConnected) {
-            LOGGER.info("Started listening for a connection...");
-
             try (Socket accepted = serverSocket.accept()) {
                 LOGGER.info("Client socket with address: " + accepted.getInetAddress() + " connected successfully.");
 
                 in = accepted.getInputStream();
-                decoder.sampleDecode(reader.readInputBytes(in));
+
+                decoder.sampleDecode(in.readAllBytes());
             } finally {
                 isConnected = false;
+
                 in.close();
 
                 LOGGER.info("Input stream and client socket closed.");
